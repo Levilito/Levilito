@@ -1,0 +1,11 @@
+fetch('http://localhost:3000/api/users/1') // Replace with your endpoint URL
+  .then(response => response.json())
+  .then(data => {
+    const id = data.id;
+    const firstName = data.firstName;
+    const lastName = data.lastName;
+    const email = data.email;
+    const phone = data.phone;
+    // Do something with the variables
+  })
+  .catch(error => console.error(error));
